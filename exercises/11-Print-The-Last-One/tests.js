@@ -1,5 +1,10 @@
 const fs = require('fs');
 const path = require('path');
+var rewire = require("rewire");
+
+const _app = rewire('./app');
+const theLastOne = _app.__get__("theLastOne");
+// const theLastOne = require('./app.js').__get__('theLastOne');
 
 jest.dontMock('fs');
 //here we are going to store and accumulate (concatenate) all the console log's from the exercise
@@ -27,7 +32,7 @@ describe('All the javascript should match', function () {
         //You can also compare the entire console buffer (if there have been several console.log calls on the exercise)
         //make sure that you call your variable "theLastOne"
 
-        expect(_buffer).toBe(text + "\n");
+        expect(_buffer).toBe(theLastOne + "\n");
 
     });
 
