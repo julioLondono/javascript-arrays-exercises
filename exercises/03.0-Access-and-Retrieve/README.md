@@ -1,4 +1,4 @@
-#0 Access and Retrieve
+#3.0 Access and Retrieve
 
 Instructions from your teacher:
 Arrays are part of every programming language. They are the way to go when you want to have a "list of elements".
