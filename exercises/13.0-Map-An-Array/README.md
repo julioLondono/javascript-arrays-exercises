@@ -1,30 +1,23 @@
-#13 Map an array
+#13.4 Map arrays of objects
 
-The Array.map() function is one of the most used functions in Javascript. It is amazing because it lets you create a new array using each item of the original array as a seed.
+The most common scenario for the mapping function is for simplifying given arrays, for example:
 
-In this example, we are using the map function to create a new array of civilian hours starting from a given array of military hours.
-
-// Given an array of militar hours
-var militaryHours = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24];
-
-// You first define a function that receives militaryHours and returns its equivalent in civilian time
-var militaryToCivilian = function(hour){
-	if(hour==12) return hour + "pm";
-	else if(hour==24) return hour-12 + "am";
-	else if(hour > 11) return hour-12 + "pm";
-	else return hour + "am";
-}
-
-// you can create a new one of civilian hours by mapping the original array but passing the militaryToCivilian function to the map function
-var civilianHours = militaryHours.map(militaryToCivilian);
-
-console.log(civilianHours);
-
-Copy paste the code inside the code editor to test it if you want.
+The current algorithm creates an array with only the names of the people and prints it on the console.
 
 Instructions
-Using the same logic given in the example, add the needed code to convert an array of Celsius values into Fahrenheit inside the map function.
+
+Please update the mapping function so it creates an array where each item contains the following:
+
+Hello my name is Joe and I am 13 years old.
 
 Hint
-Here is a 3:40 min video explaining the array map function
-https://www.youtube.com/watch?v=hfYa4ugeyuc&t=32s
+You have to get the age of each people based on their birthDate. Search in Google "How to get the age of given birth date in javascript"
+Inside your simplifier function you have to return a concatenation.
+
+The expected output should look similar but not exactly to this:
+
+[ 'Hello, my name is Joe and I am 32 years old',
+  'Hello, my name is Bob and I am 42 years old',
+  'Hello, my name is Erika and I am 28 years old',
+  'Hello, my name is Dylan and I am 18 years old',
+  'Hello, my name is Steve and I am 14 years old' ]
