@@ -1,4 +1,4 @@
-#1 Retrieve items
+#01.0 Retrieve items
 
 The only way of accessing a particular element in an array is using an index. An index is an integer number that represents the position you want to access in the array.
 

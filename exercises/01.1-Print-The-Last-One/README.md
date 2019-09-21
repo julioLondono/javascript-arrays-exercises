@@ -1,4 +1,4 @@
-#1.1 Print the last one
+#01.1 Print the last one
 
 Instructions from your teacher:
 You will never know how many items myStupidArray has because it is being randomly generated during runtime.

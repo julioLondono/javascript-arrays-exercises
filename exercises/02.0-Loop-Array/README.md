@@ -1,4 +1,4 @@
-#2 Loop Array
+#2.0 Loop Array
 
 The code right now is printing the first item in the console. Instead of doing that, print all the elements in the array.
 
