@@ -16,7 +16,7 @@ describe('Look for the string match', function () {
     });
     afterEach(() => { jest.resetModules(); });
 
-    it('you can convert from DegressF to DegreesC using the following expression: C=(((9/5)*DegreesF)+32)', function () {
+    it('use a separate function to calculate the age and then call it on the return', function () {
 
         //then I import the index.js (which should have the alert() call inside)
         const file = require("./app.js");
@@ -25,7 +25,8 @@ describe('Look for the string match', function () {
         expect(console.log.mock.calls.length).toBe(1);
 
         //Do not change the elements of the provided array
-        expect(_buffer).toBe("28.4,93.2,132.8,14");
+        //This test was made on 09/21/2019, the current date might affect the results, modify the DOB on the array to match the expected results
+        expect(_buffer).toBe("Hello, my name is Joe and I am 32 years old,"+"Hello, my name is Bob and I am 44 years old,"+"Hello, my name is Erika and I am 30 years old,"+"Hello, my name is Dylan and I am 19 years old,"+"Hello, my name is Steve and I am 16 years old");
 
     });
 
